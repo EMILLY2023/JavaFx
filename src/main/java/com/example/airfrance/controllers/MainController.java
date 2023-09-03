@@ -1,4 +1,4 @@
-package com.example.airfrance;
+package com.example.airfrance.controllers;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;

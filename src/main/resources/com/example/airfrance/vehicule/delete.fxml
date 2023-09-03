@@ -8,7 +8,7 @@
 <?import javafx.scene.control.ListView?>
 <?import javafx.collections.FXCollections?>
 <VBox xmlns:fx="http://javafx.com/fxml"
-      fx:controller="com.example.airfrance.VehiculeController">
+      fx:controller="com.example.airfrance.controllers.VehiculeController">
 
     <fx:include source="../menu.fxml" />
 
