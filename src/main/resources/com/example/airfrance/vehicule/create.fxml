@@ -1,0 +1,42 @@
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.collections.FXCollections?>
+<?import javafx.scene.layout.HBox?>
+<VBox xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.airfrance.VehiculeController">
+
+    <fx:include source="../menu.fxml" />
+
+    <VBox alignment="CENTER">
+        <padding>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
+        </padding>
+
+        <Label text="Ajouter des Véhicules"/>
+
+        <HBox  spacing="20.0">
+            <VBox spacing="20.0">
+                <ListView fx:id="listView" >
+
+                </ListView>
+            </VBox>
+            <VBox >
+
+                <Label text="Nom :"/>
+                <TextField fx:id="inputName" promptText="Saisissez le nom" />
+                <Label text="Immatriculation : "/>
+                <TextField fx:id="inputImm" promptText="Saisissez la licence" />
+                <Label text=""/>
+                <Button text="Ajouter" onAction="#create"/>
+            </VBox>
+
+
+        </HBox>
+
+
+    </VBox>
+</VBox>

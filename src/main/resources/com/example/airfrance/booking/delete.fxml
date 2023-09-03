@@ -1,0 +1,35 @@
+
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+
+
+<?import javafx.scene.control.ListView?>
+<?import javafx.collections.FXCollections?>
+<?import javafx.scene.control.ComboBox?>
+<VBox xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.example.airfrance.BookingController">
+
+    <fx:include source="../menu.fxml" />
+
+    <VBox alignment="CENTER">
+        <padding>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
+        </padding>
+        <VBox alignment="CENTER">
+            <ComboBox fx:id="vehicleComboBox">
+
+            </ComboBox>
+        </VBox>
+        <VBox>
+            <Label text="Liste des réservations"/>
+            <ListView fx:id="listView" onMouseClicked="#delete">
+                <items >
+                    <FXCollections fx:factory="observableArrayList">
+                    </FXCollections>
+                </items>
+            </ListView>
+        </VBox>
+    </VBox>
+</VBox>

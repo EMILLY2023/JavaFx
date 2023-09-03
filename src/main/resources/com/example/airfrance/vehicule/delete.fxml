@@ -1,0 +1,28 @@
+
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+
+
+<?import javafx.scene.control.ListView?>
+<?import javafx.collections.FXCollections?>
+<VBox xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.example.airfrance.VehiculeController">
+
+    <fx:include source="../menu.fxml" />
+
+    <VBox alignment="CENTER">
+        <padding>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
+        </padding>
+        <VBox>
+            <ListView fx:id="listView" onMouseClicked="#delete">
+                <items >
+                    <FXCollections fx:factory="observableArrayList">
+                    </FXCollections>
+                </items>
+            </ListView>
+        </VBox>
+    </VBox>
+</VBox>
